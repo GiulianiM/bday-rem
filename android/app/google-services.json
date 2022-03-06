@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "329891616896",
+    "project_id": "birthdaysreminder-2022",
+    "storage_bucket": "birthdaysreminder-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329891616896:android:431160dc3ed5218a14ee65",
+        "android_client_info": {
+          "package_name": "it.giuug.birthdaysreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329891616896-4dgvitkutqg6imone1om1k9pj3bchj76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.giuug.birthdaysreminder",
+            "certificate_hash": "e9f3147a37bac83835db9d0b200a92b945cff95f"
+          }
+        },
+        {
+          "client_id": "329891616896-cpefnatg6cpcu1uu40q3thqtkspsjt7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-xDl1s2cqBWJSPF0f8Ew886tNdRGd2QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329891616896-cpefnatg6cpcu1uu40q3thqtkspsjt7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

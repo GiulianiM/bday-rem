@@ -1,14 +1,12 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'firebase_options.dart';
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'firebase_options.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-
+import 'notification/setup_notification.dart';
+import 'auth/signin.dart';
 FirebaseAuth auth = FirebaseAuth.instance;
 
 Future<void> main() async {
@@ -17,38 +15,16 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
 
   //check if user is already signed-in
   userSigniIn();
-
-
+  setupNotification();
 
 
   runApp(const MyApp());
 }
 
-void userSigniIn() {
-  FirebaseAuth.instance
-      .authStateChanges()
-      .listen((User? user) async {
-    if (user == null) {
-      if (kDebugMode) {
-        print('User is currently signed out!');
-      }
-      UserCredential userCredential = await FirebaseAuth.instance.signInAnonymously();
-      if (kDebugMode) {
-        print(user?.uid);
-      }
-    } else {
-      if (kDebugMode) {
-        print('User is signed in!');
-      }
-      if (kDebugMode) {
-        print(user.uid);
-      }
-    }
-  });
-}
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);

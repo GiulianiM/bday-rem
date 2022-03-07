@@ -45,7 +45,7 @@ android {
     defaultConfig {
         // TODO: Specify your ow ion ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "it.giuug.birthdaysreminder"
-        minSdkVersion flutter.minSdkVersion
+        minSdkVersion 27
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -67,4 +67,5 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation platform('com.google.firebase:firebase-bom:29.1.0')
+    implementation 'com.google.firebase:firebase-analytics'
 }

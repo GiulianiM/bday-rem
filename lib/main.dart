@@ -1,30 +1,33 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/material.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'firebase_options.dart';
-
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
-import 'notification/setup_notification.dart';
-import 'auth/signin.dart';
-FirebaseAuth auth = FirebaseAuth.instance;
+import 'package:flutter/material.dart';
+import 'firebase_options.dart';
+import 'package:bday/auth/sign_in.dart';
+import 'package:bday/activities/homepage.dart';
 
-Future<void> main() async {
+import 'notification/notification.dart';
+
+FirebaseAppCheck appCheck = FirebaseAppCheck.instance;
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  await FirebaseAppCheck.instance.activate(
+    webRecaptchaSiteKey: 'recaptcha-v3-site-key',
+  );
 
+  //set-up notification
+  //if is new, store the FCM token to the Firestore Database
   FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-
-  //check if user is already signed-in
-  userSigniIn();
+  signIn();
   setupNotification();
-
 
   runApp(const MyApp());
 }
-
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -34,12 +37,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  FirebaseAuth auth = FirebaseAuth.instance;
-
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(home: BirthdaysList());
   }
 }
-
-

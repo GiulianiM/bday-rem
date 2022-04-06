@@ -1,42 +1,41 @@
 {
   "project_info": {
-    "project_number": "329891616896",
-    "project_id": "birthdaysreminder-2022",
-    "storage_bucket": "birthdaysreminder-2022.appspot.com"
+    "project_number": "191448713040",
+    "project_id": "bday--2022",
+    "storage_bucket": "bday--2022.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:329891616896:android:431160dc3ed5218a14ee65",
+        "mobilesdk_app_id": "1:191448713040:android:05e4f50a24b25a6eefce55",
         "android_client_info": {
-          "package_name": "it.giuug.birthdaysreminder"
+          "package_name": "it.giuug.bday"
         }
       },
       "oauth_client": [
         {
-          "client_id": "329891616896-4dgvitkutqg6imone1om1k9pj3bchj76.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "it.giuug.birthdaysreminder",
-            "certificate_hash": "e9f3147a37bac83835db9d0b200a92b945cff95f"
-          }
-        },
-        {
-          "client_id": "329891616896-cpefnatg6cpcu1uu40q3thqtkspsjt7t.apps.googleusercontent.com",
+          "client_id": "191448713040-e1vkic16afncipcjt7heigsa7jhonlcq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA-xDl1s2cqBWJSPF0f8Ew886tNdRGd2QE"
+          "current_key": "AIzaSyCRMOmda9aoaPX-mLdcykzvWKsbuP8uzu4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "329891616896-cpefnatg6cpcu1uu40q3thqtkspsjt7t.apps.googleusercontent.com",
+              "client_id": "191448713040-e1vkic16afncipcjt7heigsa7jhonlcq.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "191448713040-44qtj8vsuftsotl24p4f4jgcjvemt497.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "it.giuug.bdayrem"
+              }
             }
           ]
         }

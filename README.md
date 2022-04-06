@@ -1,4 +1,4 @@
-# birthdaysreminder
+# bday
 
 A new Flutter project.
 

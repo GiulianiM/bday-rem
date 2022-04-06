@@ -41,21 +41,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA-xDl1s2cqBWJSPF0f8Ew886tNdRGd2QE',
-    appId: '1:329891616896:android:431160dc3ed5218a14ee65',
-    messagingSenderId: '329891616896',
-    projectId: 'birthdaysreminder-2022',
-    storageBucket: 'birthdaysreminder-2022.appspot.com',
+    apiKey: 'AIzaSyCRMOmda9aoaPX-mLdcykzvWKsbuP8uzu4',
+    appId: '1:191448713040:android:05e4f50a24b25a6eefce55',
+    messagingSenderId: '191448713040',
+    projectId: 'bday--2022',
+    storageBucket: 'bday--2022.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBrn_oPZIixtzQi0cKBMreihZ2vag9IDUA',
-    appId: '1:329891616896:ios:e2495f27e6f0a6ac14ee65',
-    messagingSenderId: '329891616896',
-    projectId: 'birthdaysreminder-2022',
-    storageBucket: 'birthdaysreminder-2022.appspot.com',
-    androidClientId: '329891616896-4dgvitkutqg6imone1om1k9pj3bchj76.apps.googleusercontent.com',
-    iosClientId: '329891616896-uibdjbsltvacc52ks3pp77ikidr2feui.apps.googleusercontent.com',
-    iosBundleId: 'it.giuug.birthdaysreminder',
+    apiKey: 'AIzaSyAT_ADJFSFUH0qnu9Ib52mIZjFDvWNfQtk',
+    appId: '1:191448713040:ios:0080f43dc4b63246efce55',
+    messagingSenderId: '191448713040',
+    projectId: 'bday--2022',
+    storageBucket: 'bday--2022.appspot.com',
+    androidClientId: '191448713040-vnj6vd4mjmqam5fliclucr3jkj56gm71.apps.googleusercontent.com',
+    iosClientId: '191448713040-l8hoscls21vs1a1hvejqk5lfgti78j40.apps.googleusercontent.com',
+    iosBundleId: 'it.giuug.bday',
   );
 }
